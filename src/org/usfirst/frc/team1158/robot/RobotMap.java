@@ -21,5 +21,11 @@ public class RobotMap {
 	//Shooter Motor
 	public static int SHOOTER_WHEEL = 2;
 	
+	public static int CENTERAL_WHEEL = 3;
+	
+	//Encoders
+	public static int SHOOTER_ENCODER_A = 0;
+	public static int SHOOTER_ENCODER_B = 1;
+	
 	
 }

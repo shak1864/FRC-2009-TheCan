@@ -4,7 +4,9 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
-
+import org.usfirst.frc.team1158.robot.commands.SetShooterCommand;
+import org.usfirst.frc.team1158.robot.commands.TurnCentralWheelOffCommand;
+import org.usfirst.frc.team1158.robot.commands.TurnCentralWheelOnCommand;
 
 import com.walpole.frc.team.robot.lib.RebelTrigger;
 
@@ -44,6 +46,15 @@ public class OI {
 	private Button drLB = new JoystickButton(driverStick, 5 );
 	
 	public OI() {
+		
+		drA.whenPressed(new SetShooterCommand(0));
+		drB.whenPressed(new SetShooterCommand(0.5));
+		drX.whenPressed(new SetShooterCommand(1));
+		
+		drLB.whenPressed(new TurnCentralWheelOnCommand());
+		drLB.whenReleased(new TurnCentralWheelOffCommand());
+	
+
 	
 		
 	}

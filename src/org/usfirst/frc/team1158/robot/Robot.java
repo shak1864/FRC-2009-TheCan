@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team1158.robot.subsystems.Drive;
+import org.usfirst.frc.team1158.robot.subsystems.Shooter;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -20,6 +21,7 @@ import org.usfirst.frc.team1158.robot.subsystems.Drive;
 public class Robot extends IterativeRobot {
 
 	public static final Drive drive = new Drive();
+	public static final Shooter shooter = new Shooter();
 	public static OI oi;
 
 	Command autonomousCommand;
