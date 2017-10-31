@@ -104,7 +104,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void teleopPeriodic() {
-//		drive.arcadeDrive();
+		Robot.drive.arcadeDrive(oi.getDriverJoystick());
 		Scheduler.getInstance().run();
 	}
 
