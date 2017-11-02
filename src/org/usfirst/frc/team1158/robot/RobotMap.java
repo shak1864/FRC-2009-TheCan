@@ -18,7 +18,7 @@ public class RobotMap {
 	public static int LEFT = 0;
 	public static int RIGHT = 1;
 	
-	//Drive Encoder
+	//Drive Sensors
 	public static int DRIVER_ENCODER_ONE_A = 0;
 	public static int DRIVER_ENCODER_ONE_B = 1;
 
@@ -30,9 +30,17 @@ public class RobotMap {
 	
 	public static int CENTERAL_WHEEL = 3;
 	
-	//Shooter Encoder
+	public static int FLAPPER = 4;
+	
+	public static int COLLECTER = 5;
+	
+	//Shooter Sensors
 	public static int SHOOTER_ENCODER_A = 4;
 	public static int SHOOTER_ENCODER_B = 5;
+	
+	public static int FLAPPER_LIMIT_SWITCH_FRONT = 6;
+	public static int FLAPPER_LIMIT_SWITCH_BACK = 7;
+	
 	
 	
 }
