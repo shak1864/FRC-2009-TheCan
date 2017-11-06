@@ -35,11 +35,10 @@ public class RobotMap {
 	public static int COLLECTER = 5;
 	
 	//Shooter Sensors
-	public static int SHOOTER_ENCODER_A = 4;
-	public static int SHOOTER_ENCODER_B = 5;
+	public static int SHOOTER_LIGHTSENSOR_A = 4;
 	
-	public static int FLAPPER_LIMIT_SWITCH_FRONT = 6;
-	public static int FLAPPER_LIMIT_SWITCH_BACK = 7;
+	public static int FLAPPER_LIMIT_SWITCH_FRONT = 5;
+	public static int FLAPPER_LIMIT_SWITCH_BACK = 6;
 	
 	
 	

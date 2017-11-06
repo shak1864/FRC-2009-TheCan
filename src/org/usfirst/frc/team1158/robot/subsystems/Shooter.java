@@ -16,7 +16,7 @@ public class Shooter extends Subsystem {
     private SpeedController centralWheel;
     private SpeedController shooterWheel;
     
-    private Encoder shooterEncoder;
+    private DigitalInput shooterLightSensor;
     
     private SpeedController flapper;
     
@@ -29,7 +29,7 @@ public class Shooter extends Subsystem {
     	shooterWheel = new Victor(RobotMap.SHOOTER_WHEEL);
     	flapper = new Victor(RobotMap.FLAPPER);
     	
-    	shooterEncoder = new Encoder(RobotMap.SHOOTER_ENCODER_A, RobotMap.SHOOTER_ENCODER_B);
+    	shooterLightSensor = new DigitalInput(RobotMap.SHOOTER_LIGHTSENSOR_A);
     	
     	flapperLimitFront = new DigitalInput(RobotMap.FLAPPER_LIMIT_SWITCH_FRONT);
     	flapperLimitBack = new DigitalInput(RobotMap.FLAPPER_LIMIT_SWITCH_BACK);
